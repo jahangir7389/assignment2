@@ -1,0 +1,64 @@
+VMs
+
+Hardware level virtualization i.e.
+abstraction of physical hardware
+
+Has own Hardware & OS
+
+Each VM has a full copy of an
+operating system + application +
+binaries + libraries
+
+can take up to tens of GBs.
+
+VMs are isolated, apps are not
+
+Complete OS, Static Compute, Static
+Memory, High Resource Usage
+
+Ops were responsible for creating
+VMs, installing Software
+Dependencies, then installing
+Software which might not work due
+to some compatibility issues
+
+Dev responsible for Software
+Development and running on local
+machine vs Ops running the
+Software on VM with newly installed
+Libraries
+
+Works on my machine issue
+
+
+Containers
+
+OS level virtualization i.e. abstraction at
+the app layer (code + dependencies)
+
+Share hardware, host OS kernel but can
+have own OS
+
+take up less space (typically tens to
+hundreds of MBs in size)
+
+containers are isolated, so are the apps
+
+Container Isolation, Shared Kernel,
+Burstable Compute, Burstable Memory,
+Low Resource Usage
+
+Ops are responsible for VM creation
+and installing Docker only
+
+Dev writes code and tests in local
+container based on the same image
+
+Same image is deployed in Stage,
+Prod
+
+Ideally no “WORKS ON MY
+MACHINE” issue
+
+Process level isolation but relatively
+less secure
