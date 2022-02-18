@@ -1,0 +1,22 @@
+Docker Architecture
+
+Client
+
+
+A simple CLI to interact with Daemon
+Primary way to interact with Docker Daemon, which carries them out
+
+
+
+Daemon
+
+
+Main component running on OS, communicating with OS
+Build and store Images
+Create, run and monitor Containers
+
+
+Registry
+
+Store and distribute images
+DockerHub, private registries
